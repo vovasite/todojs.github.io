@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>VovaDos</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Libre+Barcode+39+Text|Montserrat|Open+Sans|Roboto|Staatliches" rel="stylesheet">
+	</head>
+	<body>
+		<div id='header'>
+			<center>
+			<h1 id='h1-text'>Todo JS.</h1>
+		</center>
+		</div>
+		<div id='container'>
+			<div id='functions'>
+				<a id='rename'>Изменить</a>
+				<a id='deletes'>Удалить</a>
+			</div>
+			<div id='main-function'>
+			<input id='input'>
+			<a id='button'>Добавить</a>
+		</div>
+		</div>
+	<script src='http://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script>
+		$('document').ready(function(){
+			$('#rename').click(function(){
+			$('#container').append("<input id='renameinput' autofocus>");
+			$('#container').append("<button id='aa'>Изменить</button>");
+					$('#aa').click(function(){
+					var text = $('#renameinput').val()
+					$('#this-text').text(text);
+					$('#renameinput').remove();
+					$('#aa').remove();
+				});
+			});
+			$('#button').click(function(){
+				$('#container').append("<div id='objects'><input type='checkbox' id='checkbox'><h2 id='this-text'></h2>");
+				var x = $('#input').val()
+				$('#this-text').append(x);
+				$('#deletes').click(function(){
+				$('#this-text').remove();
+				$('#checkbox').remove();
+				$('#deletes').css({'visibility': 'hidden'});
+				$('#rename').css({'visibility': 'hidden'});
+				$('#input').val('');
+			});
+				$(function(){ 
+					$( "#checkbox" ).on( "click", function() {             
+						if($(this).is(":checked")){
+							$('#deletes').css({'visibility': 'visible'})
+							$('#rename').css({'visibility': 'visible'});
+				}    
+					else{
+						$('#deletes').css({'visibility': 'hidden'})
+						$('#rename').css({'visibility': 'hidden'});
+ 						};
+					});
+				});
+			});
+		});
+	</script>
+	</body>
+</html>

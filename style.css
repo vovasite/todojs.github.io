@@ -1,0 +1,110 @@
+#header{
+	position: absolute;
+	background-color: #F8D044;
+	top: 150px;
+	left: 260px;
+	width: 750px;
+	height: 75px;
+	box-shadow: -3px -3px #EDC539 inset;
+	bottom: 10px;
+}
+#h1-text{
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	top: -5px;
+	left: 310;
+}
+#container{
+	position: absolute;
+	top: 225px;
+	background-color: #FFFFFF;
+	width: 750px;
+	height: 400px;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	left: 260px;
+}
+#main-function{
+	position: absolute;
+	top: 325px;
+	background-color: #FFFFFF;
+	width: 750px;
+	height: 75px;
+	border-top: 0.5px solid #000000;
+	border-bottom: 0.5px solid #000000;
+
+}
+#input{
+	position: absolute;
+	top: 10px;
+	width: 600px;
+	height: 50px;
+	left: 10px;
+	font-size: 25px;
+}
+#button{
+	position: absolute;
+	left: 635px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+	cursor: pointer;
+	top: 23px;
+}
+#checkbox{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 20px;
+}
+#this-text{
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	left: 50px;
+	top: -2px;
+}
+#deletes{
+	position: absolute;
+	left: 670px;
+	top: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	cursor: pointer;
+	color: red;
+	visibility: hidden;
+}
+#rename{
+	position: absolute;
+	top: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	cursor: pointer;
+	left: 575px;
+	color: #58CDED;
+	visibility: hidden;
+}
+#renameinput{
+	position: absolute;
+	top: 10px;
+	left: 150px;
+	font-size: 30px;
+}
+#aa {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  position: absolute;
+  top: 100px;
+  left: 600px;
+} 
+#aa:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+#aa:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
